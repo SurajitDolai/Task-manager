@@ -8,24 +8,7 @@ const task=new mongoose.Schema({
     complete:{
         type:Number,
         default: 0
-    }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
+    }   
 })
 
 const Task=mongoose.model("Task",task)
