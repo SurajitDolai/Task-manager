@@ -30,12 +30,6 @@ let dlt=(req,res)=>{
     .catch(err=>res.json(err))
 }
 
-// let stsget=async(req,res)=>{
-//     const id =req.params.id;
-//    await Task.findById({_id:id})
-//     .then(user=>res.json(user))
-//     .catch(err=>res.json(err))
-// }
 
 let update = async (req, res) => {
   const id = req.params.id;
@@ -52,12 +46,7 @@ let update = async (req, res) => {
 };
 
 
-// let getupdate=async(req,res)=>{
-//     const id =req.params.id;
-//    await Task.findById({_id:id})
-//     .then(user=>res.json(user))
-//     .catch(err=>res.json(err))
-// }
+
 
 
 module.exports={User,userDetails,dlt,update}
