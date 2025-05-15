@@ -8,12 +8,7 @@ const [task,settask]=useState()
 const [descripton,setdesc]=useState()
 const [startTime,setStime]=useState()
 const [endTime,setEtime]=useState()
-
-
-
-
-
-
+    
 const submit=(e)=>{
     e.preventDefault();
     axios.post('http://localhost:3001/User-task',{task,descripton,startTime,endTime})
@@ -25,8 +20,6 @@ const submit=(e)=>{
       console.log(err)
     })
 }
-
-
 
   return (
     <div>
